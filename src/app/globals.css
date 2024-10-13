@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --royal-blue-50: #edf2ff;
+  --royal-blue-100: #dfe6ff;
+  --royal-blue-200: #c5d2ff;
+  --royal-blue-300: #a2b3ff;
+  --royal-blue-400: #7d8afc;
+  --royal-blue-500: #5e63f6;
+  --royal-blue-600: #4840eb;
+  --royal-blue-700: #3d33cf;
+  --royal-blue-800: #322ca7;
+  --royal-blue-900: #2d2b84;
+  --royal-blue-950: #1c194d;
+  --gray-50: #f7f7f7;
+  --gray-100: #ededed;
+  --gray-200: #dfdfdf;
+  --gray-300: #c8c8c8;
+  --gray-400: #adadad;
+  --gray-500: #999999;
+  --gray-600: #888888;
+  --gray-700: #7b7b7b;
+  --gray-800: #676767;
+  --gray-900: #545454;
+  --gray-950: #363636;
+}
+
+body {
+  background-color: var(--gray-100);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.primary-button {
+  background-color: var(--royal-blue-500);
+  color: white;
+  font-size: 1em;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-home-link {
+  display: inline-block;
+  margin: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.main-content {
+  margin: 0 1em;
+  margin-bottom: 5em;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin: 0 5em;
+    margin-bottom: 5em;
+  }
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 3fr;
+  border: 2px solid black;
+  border-radius: 0.3em;
+  background-color: white;
+  overflow: auto;
+}
+
+.table-header {
+  display: contents; /* 複数の列に展開 */
+  font-weight: bold;
+}
+
+.table-header div {
+  padding: 10px;
+  border-top: 0;
+  border-bottom: 2px solid var(--gray-300);
+  border-left: 1px solid var(--gray-300);
+  border-right: 1px solid var(--gray-300);
+}
+
+.table-header div:first-child {
+  border-left: none;
+}
+
+.table-header div:last-child {
+  border-right: none;
+}
+
+.table-row > div {
+  padding: 10px;
+  border-top: 0;
+  border-bottom: 1px solid var(--gray-300);
+  border-right: 1px solid var(--gray-300);
+}
+
+.table-row div:last-child {
+  border-right: none;
+}
+
+.table-row {
+  display: contents; /* 複数の列に展開 */
+}
+
+input.error {
+  border: 2px solid #ff7575;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 8em;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 90%;
+  left: -100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.json-tree-wrapper {
+  background-color: #002b36;
+  padding: 0em 0.5em 0.1em;
+}
+
+.page-subtitle {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.api-filter-info {
+  margin: 1em 0;
+}
+
+.get-request-url {
+  margin-top: 2em;
+}
+
+.get-request-url div {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.get-request-url code {
+  display: block;
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  border: 1px solid var(--gray-300);
+  white-space: pre;
+  overflow: scroll;
+}
+
+.get-save-buttons {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}

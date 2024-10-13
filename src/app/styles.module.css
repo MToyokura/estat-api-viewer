@@ -1,0 +1,75 @@
+.home_h1 {
+  margin: 2em 0 1em;
+}
+
+.json_button {
+  box-sizing: border-box;
+  border-radius: 5px 0 0 5px;
+}
+
+.csv_button {
+  box-sizing: border-box;
+  border-radius: 0 5px 5px 0;
+}
+
+.sample_toggle {
+  margin: 3em 0 1em;
+}
+
+.sample_toggle_active {
+  width: 10em;
+  height: 3em;
+  background-color: var(--royal-blue-500);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sample_toggle_inactive {
+  width: 10em;
+  height: 3em;
+  background-color: white;
+  color: rgb(138, 138, 138);
+  border: 1px solid rgb(138, 138, 138);
+  cursor: pointer;
+}
+
+.panels_container {
+  margin: 5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.panel {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1em;
+  border: 1px solid var(--royal-blue-500);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 15em;
+}
+
+.panel_subtitle {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: rgb(120, 120, 120);
+}
+
+.github_repo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--gray-900);
+}
+
+.github_repo a {
+  color: var(--gray-900);
+  text-decoration: none;
+}

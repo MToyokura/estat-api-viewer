@@ -1,0 +1,9 @@
+.table_separator_info {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.additional_fields_input {
+  display: flex;
+  gap: 0.5em;
+}
