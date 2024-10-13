@@ -61,6 +61,12 @@
   color: rgb(120, 120, 120);
 }
 
+.disclamer {
+  margin-top: 10em;
+  font-size: 0.8em;
+  color: rgb(120, 120, 120);
+}
+
 .github_repo {
   display: flex;
   flex-direction: column;

@@ -68,6 +68,9 @@ export default function Home() {
             <GtihubIcon height="1.5em" width="1.5em" />
           </a>
         </div>
+        <div className={styles.disclamer}>
+          このサイトのサービスは、政府統計総合窓口(e-Stat)のAPI機能を使用していますが、サービスの内容は国によって保証されたものではありません。
+        </div>
       </div>
     </div>
   );
