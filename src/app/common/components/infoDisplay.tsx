@@ -46,6 +46,7 @@ export const InfoDisplay = memo(function InfoDisplay(props: {
         >
           {headers && (
             <AgGridReact
+              enableCellTextSelection={true}
               columnDefs={headers.map(
                 (header) =>
                   ({

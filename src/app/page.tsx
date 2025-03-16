@@ -93,6 +93,7 @@ function SampleCsvViewer() {
     >
       {headers && (
         <AgGridReact
+          enableCellTextSelection={true}
           columnDefs={headers.map(
             (header) =>
               ({
